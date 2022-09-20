@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>I Love You</title>  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      
+      
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+      <link rel="stylesheet" href="alarmclock.css">
+    </head>
+    <body style="background-color: #A4B1A0;">
+
+        <!--------------------------------------------------- Navbar -------------------------------------------------------------------->
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subjects.html">Subjects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Study Checklist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="alarmclock.html">Alarm Clock</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!----------------------------------------------- Clock -------------------------------------------------------------------------->
+        <div class="container" id="clockbox" style="background-color: #f8ecd9;">
+            <div class="p-3">
+                <h3 class="text-center mt-5">Set Alarm</h3>
+            </div>
+            <div class="row text-center justify-content-center">
+                <label class="col-3" for="hours">Hours</label>
+                <label class="col-3" for="minutes">Minutes</label>
+                <label class="col-3" for="seconds">Seconds</label>
+            </div>
+            <div class="row text-center justify-content-center d-block mx-5">
+                <input class="col-3" id="hours" type="number" value="0" max="24" min="00"/>
+                <input class="col-3" id="minutes" type="number" value="0" max="59" min="00"/>
+                <input class="col-3" id="seconds" type="number" value="0" max="59" min="00"/>
+            </div>
+            <div class="row p-4 text-center justify-content-center">
+                <div class="col-3">
+                    <button type="button" class="btn button" style="background-color: #c2914c;" onclick="startTimer()"><b>Set</b></button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn button" style="background-color: #AE5753;" onclick="clearTimer()"><b>Clear</b></button>
+                </div>               
+            </div>
+        </div>
+
+    <script src="alarmclock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

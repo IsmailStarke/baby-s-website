@@ -1,0 +1,24 @@
+input[type='number'] {
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
+    color: #404040;
+}
+
+#clockbox {
+    margin-top: 10%; 
+    height: 450px; 
+    width: 1000px; 
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #404040, 15px 15px 15px #808080;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    color: white;
+}
